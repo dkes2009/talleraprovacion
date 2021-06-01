@@ -1,0 +1,108 @@
+*{
+
+margin: 0px;
+padding: 0px;
+
+}
+
+.content{
+height: 100px;
+padding: 20px;
+margin: 10px;
+background-color: #eea538;
+border-top:0.4px solid rgba(7, 6, 6, 0.966) ;
+}
+
+/* div prueba
+.prueba{
+
+width: 10%;
+height : 30px;
+padding-bottom: 10px;
+background-color: #999b84;
+}
+*/
+#menu{
+
+height: 30%;
+width: 200px;    
+margin-bottom: 200px;  
+margin-left: 10px; 
+display: none;
+}
+
+#responsive #menu_responsive:checked ~ #menu{
+    display: block;
+}
+
+
+#menu ul>li{
+    background-color: #4c6b70;
+    text-align: center;
+    
+
+}
+#menu ul>li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+    border-top: 1px solid rgb(255,255,255,.4);
+}
+#menu ul>li a:hover{
+    
+    background-color: rgb(230, 0, 0);
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        background-color: #91560a;
+    }
+    #menu{
+        width: 10%;
+        height: 30px;
+        background-color: rgba(153, 155, 132, 0);
+        margin-left: 0%;
+        }
+
+        #menu ul>li{
+            float: none;
+            text-align: center;
+            list-style: none;
+        }
+        #check-menu:checked ~ #menu{
+            margin-left: 0%;
+            transition: 0s all;    
+        }
+        #menu ul>li{
+            background-color: rgb(206, 206, 206);
+            text-align: center;
+            list-style: none;
+        }
+       
+  }
+  @media screen and (min-width:360px){
+    body{
+        background-color: #91560a;
+     }
+    
+    }
+
+    #desayuno{
+        width:90%;
+        height: 500px;
+        background-color: blanchedalmond;
+    }
+
+    #almuerzo{
+        width: 90%;
+        height: 500px;
+        background-color:chartreuse
+    }
+    #cena{
+        width: 90%;
+        height: 500px;
+        background-color:crimson
+    }
+    
